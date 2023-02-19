@@ -7,7 +7,7 @@ import techproed.pages.FacebookLoginPage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 
-public class Homework07 {
+public class Homework06 {
 
     //https://www.facebook.com/ adresine gidin
     //POM’a uygun olarak email, sifre kutularini doldurun ve giris yap butonunu locate edin
