@@ -3,6 +3,7 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 public class ConfigReader {
+
     //This class reads the configuration.properties file
     //Create Properties instance
     private static Properties properties;
@@ -20,6 +21,7 @@ public class ConfigReader {
             e.printStackTrace();
         }
     }
+
     //This method will get the key from properties file,
     //And return the value as String
     //We create this method to read the file

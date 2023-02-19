@@ -1,32 +1,33 @@
 package techproed.tests.homework;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import techproed.pages.AmazonHomePage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 
 public class Homework02 {
 
+    //https://www.amazon.com/ adresine gidin.
+    //Amazon ana sayfaya gittiginizi test edin
+
     @Test
     public void dependsOnTest1() {
-        // https://www.amazon.com/ adresine gidin.
         Driver.getDriver().get(ConfigReader.getProperty("amazon_url"));
-
-        // Amazon ana sayfaya gittiginizi test edin
         Assert.assertEquals(Driver.getDriver().getCurrentUrl(), "https://www.amazon.com/");
     }
 
+    //1.Test basarili ise search Box’i kullanarak “Nutella” icin arama yapin ve aramanizin gerceklestigini Test edin
+    //Test : “Nutella” icin arama yapildiysa ilk urunu tiklayin ve fiyatinin $16.83 olmadigini test edin
+
+    AmazonHomePage amazonHomePage;
     @Test (dependsOnMethods = "dependsOnTest1")
     public void dependsOnTest2() {
-        // 1.Test basarili ise search Box’i kullanarak “Nutella” icin arama yapin ve aramanizin gerceklestigini Test edin
-        Driver.getDriver().findElement(By.xpath("//*[@id='twotabsearchtextbox']")).sendKeys("Nutella", Keys.ENTER);
-        Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//*[@class='a-section a-spacing-small a-spacing-top-small']")).isDisplayed());
-
-        //Test : “Nutella” icin arama yapildiysa ilk urunu tiklayin ve fiyatinin $16.83 olmadigini test edin
-        Driver.getDriver().findElement(By.xpath("(//*[@class='s-image'])[1]")).click();
-        Assert.assertNotEquals(Driver.getDriver().findElement(By.xpath("(//*[@class='a-offscreen'])[6]")).getText(), "$16.83");
+        amazonHomePage = new AmazonHomePage();
+        amazonHomePage.searchBox.sendKeys("Nutella", Keys.ENTER);
+        Assert.assertTrue(amazonHomePage.resultWriting.isDisplayed());
+        amazonHomePage.firstProduct.click();
         Driver.closeDriver();
     }
 

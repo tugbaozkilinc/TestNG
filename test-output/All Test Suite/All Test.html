@@ -1,0 +1,286 @@
+<html>
+<head>
+<title>TestNG:  All Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>All Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>39/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 06 17:05:22 EET 2023</td>
+</tr>
+<tr><td>Total time:</td><td>100 seconds (100980 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: volvo</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@550ee7e5</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest03.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest03<br>Parameters: pam.raymond@bluerentalcars.com, Nga^g6!</td>
+<td></td>
+<td>5</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest03@15aab8c6</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.customerServiceTest()'><b>customerServiceTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: John, 56789</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@33990a0c</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: toyota</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@550ee7e5</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest03.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest03<br>Parameters: raj.khan@bluerentalcars.com, v7Hg_va^</td>
+<td></td>
+<td>5</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest03@15aab8c6</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeInformationTest()'><b>employeeInformationTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: raj.khan@bluerentalcars.com, v7Hg_va^</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@33990a0c</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.customerServiceTest()'><b>customerServiceTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: Nancy, 98765</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@33990a0c</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest03.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest03<br>Parameters: sam.walker@bluerentalcars.com, c!fas_art</td>
+<td></td>
+<td>5</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest03@15aab8c6</td></tr>
+<tr>
+<td title='techproed.tests.smoketests.Day22_NegativeLoginTest.US100208_Negative_Login()'><b>US100208_Negative_Login</b><br>Test class: techproed.tests.smoketests.Day22_NegativeLoginTest</td>
+<td></td>
+<td>6</td>
+<td>techproed.tests.smoketests.Day22_NegativeLoginTest@4de4b452</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.dataProviderTest()'><b>dataProviderTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: kate.brown@bluerentalcars.com, tad1$Fas</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest02@37654521</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: sam.walker@bluerentalcars.com, c!fas_art</td>
+<td></td>
+<td>5</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest02@37654521</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: honda</td>
+<td></td>
+<td>6</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@550ee7e5</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.dataProviderTest()'><b>dataProviderTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: sam.walker@bluerentalcars.com, c!fas_art</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest02@37654521</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: honda</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@550ee7e5</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.dataProviderTest()'><b>dataProviderTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: raj.khan@bluerentalcars.com, v7Hg_va^</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest02@37654521</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeInformationTest()'><b>employeeInformationTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: pam.raymond@bluerentalcars.com, Nga^g6!</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@33990a0c</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: mercedes</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@550ee7e5</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: toyota</td>
+<td></td>
+<td>6</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@550ee7e5</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: pam.raymond@bluerentalcars.com, Nga^g6!</td>
+<td></td>
+<td>5</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest02@37654521</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeDataTest()'><b>employeeDataTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: Daisy, 02837</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@33990a0c</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeInformationTest()'><b>employeeInformationTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: sam.walker@bluerentalcars.com, c!fas_art</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@33990a0c</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: volvo</td>
+<td></td>
+<td>7</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@550ee7e5</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: bmw</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@550ee7e5</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: tesla</td>
+<td></td>
+<td>11</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@550ee7e5</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.customerDataTest()'><b>customerDataTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: manager3, 56790, Oslo</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@33990a0c</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: raj.khan@bluerentalcars.com, v7Hg_va^</td>
+<td></td>
+<td>5</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest02@37654521</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.customerDataTest()'><b>customerDataTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: manager2, 98712, Tokyo</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@33990a0c</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeInformationTest()'><b>employeeInformationTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: kate.brown@bluerentalcars.com, tad1$Fas</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@33990a0c</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.dataProviderTest()'><b>dataProviderTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: pam.raymond@bluerentalcars.com, Nga^g6!</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest02@37654521</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeDataTest()'><b>employeeDataTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: Bob, 93837</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@33990a0c</td></tr>
+<tr>
+<td title='techproed.tests.smoketests.Day22_PositiveLoginTest.US100201_Admin_Login()'><b>US100201_Admin_Login</b><br>Test class: techproed.tests.smoketests.Day22_PositiveLoginTest<br/>
+<a href="#Output-849922566" onClick='toggleBox("Output-849922566", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-849922566" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-849922566">
+GO TO WEB PAGE<br/>
+CLICK THE LOGIN BUTTON<br/>
+ENTER YOUR ACCESS INFORMATION<br/>
+ASSERT THE ENTRY IS OK<br/>
+CLOSE THE DRIVER<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>techproed.tests.smoketests.Day22_PositiveLoginTest@50b5ac82</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: kate.brown@bluerentalcars.com, tad1$Fas</td>
+<td></td>
+<td>5</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest02@37654521</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeDataTest()'><b>employeeDataTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: Jake, 65746</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@33990a0c</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.customerDataTest()'><b>customerDataTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: manager1, 12378, NewYork</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@33990a0c</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: mercedes</td>
+<td></td>
+<td>6</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@550ee7e5</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: bmw</td>
+<td></td>
+<td>6</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@550ee7e5</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: tesla</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@550ee7e5</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.customerServiceTest()'><b>customerServiceTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: Adam, 12345</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@33990a0c</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest03.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest03<br>Parameters: kate.brown@bluerentalcars.com, tad1$Fas</td>
+<td></td>
+<td>5</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest03@15aab8c6</td></tr>
+</table><p>
+</body>
+</html>

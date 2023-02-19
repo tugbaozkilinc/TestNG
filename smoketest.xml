@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Blue Rental Car Suite" verbose="1">
+    <test name="Smoke Test">
+        <packages>
+<!--      NOT: name gecerli bir isim olmali, klasorun path i root dosyasindan(techproed) baslamali
+          NOT: Save-->
+            <package name="techproed.tests.dataprovider"></package>
+            <package name="techproed.tests.smoketests"></package>
+        </packages>
+    </test>
+</suite>

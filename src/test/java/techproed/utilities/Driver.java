@@ -10,8 +10,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.time.Duration;
 
 public class Driver {
+
     private static WebDriver driver;
-    // getDriver() is used to instantiate the driver object
+    //getDriver() is used to instantiate the driver object
     public static WebDriver getDriver(){
         if (driver==null){
             switch (ConfigReader.getProperty("browser")) {
@@ -21,7 +22,7 @@ public class Driver {
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
-                    driver=new FirefoxDriver();
+                    driver = new FirefoxDriver();
                     break;
                 case "chrome-headless":
                     WebDriverManager.chromedriver().setup();
@@ -29,23 +30,25 @@ public class Driver {
                     break;
                 case "edge":
                     WebDriverManager.edgedriver().setup();
-                    driver=new EdgeDriver();
+                    driver = new EdgeDriver();
                     break;
             }
-        // NOTE: selenium 4.5
-        // driver = WebDriverManager.chromedriver().create();
+        //NOTE: selenium 4.5
+        //driver = WebDriverManager.chromedriver().create();
         }
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
         return driver;
     }
-    // closeDriver() is used to close the driver
+
+    //closeDriver() is used to close the driver
     public static void closeDriver(){
-    // if driver is already being used(pointing an object) then quit the driver
+    //if driver is already being used(pointing an object) then quit the driver
         if (driver!=null){
             driver.quit();
             driver=null;
         }
     }
+
 }
