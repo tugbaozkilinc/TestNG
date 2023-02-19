@@ -122,7 +122,7 @@ public class ReusableMethods {
     }
 
     //This can be used when a new page opens
-    public static void waitForPageToLoad(long timeout) { //------------------------------------------------------------------------------------
+    public static void waitForPageToLoad(long timeout) {
         ExpectedCondition<Boolean> expectation = new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver driver) {
                 return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
@@ -138,7 +138,7 @@ public class ReusableMethods {
     }
 
     //Fluent Wait
-    public static WebElement fluentWait(final WebElement webElement, int timeout) { //------------------------------------------------------------
+    public static WebElement fluentWait(final WebElement webElement, int timeout) {
         FluentWait<WebDriver> wait = new FluentWait<WebDriver>(Driver.getDriver())
                 .withTimeout(Duration.ofSeconds(3)) //Wait 3 second each time
                 .pollingEvery(Duration.ofSeconds(1)) //Check for the element every 1 second
@@ -170,7 +170,7 @@ public class ReusableMethods {
         return select.getFirstSelectedOption();
     }
 
-    public static void verifyElementDisplayed(By by) { //---------------------------------------------------------------------------
+    public static void verifyElementDisplayed(By by) {
         try {
             assertTrue("Element not visible: " + by, Driver.getDriver().findElement(by).isDisplayed());
         } catch (NoSuchElementException e) {
@@ -178,7 +178,7 @@ public class ReusableMethods {
         }
     }
 
-    public static void verifyElementNotDisplayed(By by) { //----------------------------------------------------------------------------
+    public static void verifyElementNotDisplayed(By by) {
         try {
             assertFalse("Element should not be visible: " + by, Driver.getDriver().findElement(by).isDisplayed());
         } catch (NoSuchElementException e) {
@@ -186,7 +186,7 @@ public class ReusableMethods {
         }
     }
 
-    public static void verifyElementNotDisplayed(WebElement element) { //----------------------------------------------------------------
+    public static void verifyElementNotDisplayed(WebElement element) {
         try {
             assertFalse("Element should not be visible: " + element, element.isDisplayed());
         } catch (NoSuchElementException e) {
@@ -194,7 +194,7 @@ public class ReusableMethods {
         }
     }
 
-    public static void verifyElementDisplayed(WebElement element) { //---------------------------------------------------------------
+    public static void verifyElementDisplayed(WebElement element) {
         try {
             assertTrue("Element not visible: " + element, element.isDisplayed());
         } catch (NoSuchElementException e) {
