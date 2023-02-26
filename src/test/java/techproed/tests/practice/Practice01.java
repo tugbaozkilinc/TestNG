@@ -7,7 +7,7 @@ import techproed.pages.AmazonHomePage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 
-public class Day01_PageKullanimi {
+public class Practice01 {
 
     //Amazona gidelim
     //iphone aratalim

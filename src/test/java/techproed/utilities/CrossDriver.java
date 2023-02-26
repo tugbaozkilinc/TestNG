@@ -9,18 +9,22 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
 
-public class Driver {
+public class CrossDriver {
 
-    private Driver(){}
+    private CrossDriver(){}
 
     private static WebDriver driver;
-    //getDriver() is used to instantiate the driver object
-    public static WebDriver getDriver(){
+    public static WebDriver getDriver(String browser){
+        browser = (browser==null) ? ConfigReader.getProperty("browser") : browser;
         if (driver==null){
-            switch (ConfigReader.getProperty("browser")) {
+            switch (browser) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
+                    break;
+                case "edge":
+                    WebDriverManager.edgedriver().setup();
+                    driver = new EdgeDriver();
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
@@ -30,13 +34,7 @@ public class Driver {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
                     break;
-                case "edge":
-                    WebDriverManager.edgedriver().setup();
-                    driver = new EdgeDriver();
-                    break;
             }
-        //NOTE: selenium 4.5
-        //driver = WebDriverManager.chromedriver().create();
         }
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -44,9 +42,7 @@ public class Driver {
         return driver;
     }
 
-    //closeDriver() is used to close the driver
     public static void closeDriver(){
-    //if driver is already being used(pointing an object) then quit the driver
         if (driver!=null){
             driver.quit();
             driver=null;
