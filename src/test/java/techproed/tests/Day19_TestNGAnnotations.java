@@ -17,8 +17,8 @@ public class Day19_TestNGAnnotations {
     //@AfterTest : Her bir Test'den sonra(TEST CASE ILE KARISTIRILMAMALI) 1 sefer calisir
     //@BeforeClass : Her bir class'dan once 1 sefer calisir
     //@AfterClass : Her bir class'dan sonra 1 sefer calisir
-    //@Before Method : her bir @Test annotationdan once tek sefer calisir. JUnitdeki karsiligi sadece @Before
-    //@After Method : her bir @Test annotationdan sonra tek sefer calisir. JUnitdeki karsiligi sadece @After
+    //@BeforeMethod : her bir @Test annotationdan once tek sefer calisir. JUnitdeki karsiligi sadece @Before
+    //@AfterMethod : her bir @Test annotationdan sonra tek sefer calisir. JUnitdeki karsiligi sadece @After
     //@Test(enabled = false) : @Test case leri kullanima kapatmak icin kullanilir
     //@Ignore (@Test @Ignore): @Test caseleri atlamak(skip,ignore) icin kullanilir
     //@Test(priority = 1) : Test caseleri onceliklendirmek icin kullanilir
@@ -82,12 +82,12 @@ public class Day19_TestNGAnnotations {
         System.out.println("Test 2");
     }
 
-    @Test(enabled = false, groups = "regression-tests")
+    @Test(enabled = false)
     public void test3(){
         System.out.println("Test 3");
     }
 
-    @Test(priority = 4)
+    @Test(priority = 4, groups = "regression-tests")
     public void test4(){
         System.out.println("Test 4");
     }

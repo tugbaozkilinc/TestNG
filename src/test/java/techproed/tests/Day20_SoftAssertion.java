@@ -12,7 +12,6 @@ public class Day20_SoftAssertion {
     @Test
     public void testName() {
         SoftAssert softAssert = new SoftAssert();
-
         System.out.println("Satir 16");
         softAssert.assertEquals(2, 5); //fail
         System.out.println("Satir 18");
@@ -20,12 +19,12 @@ public class Day20_SoftAssertion {
         System.out.println("Satir 20");
         softAssert.assertTrue(true); //pass
         System.out.println("Satir 22");
-        softAssert.assertAll(); //Pass ya da Fail olarak assertion in durumunu raporlar.
+        softAssert.assertAll(); //Pass ya da Fail olarak assertion in durumunu raporlar. Bunu kullanmazsan sadece pass olanlari gorursun, fail olanlari goremezsin.
     }
 
     //Singleton Pattern (Tekli Kullanim)
     //Herhangi bir Java classindan obje kullanimini sinirlayabiliriz. Buna Singleton pattern(tekli kullanim) denir.
     //Singleton pattern, class’ı tek bir instance ile kısıtlayan bir software dizayn kalıbıdır.
-    //Driver Class’i singleton pattern’e uygun dizayn ederek tum projede farkli driver uretilmesinin onune geceriz.
+    //Driver Class’i singleton pattern’e uygun dizayn ederek tum projede farkli driver lar uretilmesinin onune geceriz.
 
 }

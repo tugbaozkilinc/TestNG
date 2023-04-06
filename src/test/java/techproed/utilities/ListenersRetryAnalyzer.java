@@ -10,7 +10,7 @@ public class ListenersRetryAnalyzer implements IAnnotationTransformer {
 
     @Override
     public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
-        annotation.setRetryAnalyzer(ListenersRetry.class); //Bu sinif ListenersRetry util class ina baglidir.
+        annotation.setRetryAnalyzer(ListenersRetry.class); //Bu class ListenersRetry util class ina baglidir.
     }
 
 }

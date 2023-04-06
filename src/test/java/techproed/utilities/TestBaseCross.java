@@ -11,7 +11,7 @@ import java.time.Duration;
 public class TestBaseCross {
 
     protected WebDriver driver;
-    @Parameters("browser") //@Parameters Basa gelen parametreyi kullanmak icin eklenir.
+    @Parameters("browser") //@Parameters gelen parametreyi kullanmak icin eklenir.
     @BeforeClass
     public void setup(@Optional String browser) { //Burda @Optional yazma sebebimiz setup methoduna parameter gelmese de calismasini istememiz.
         driver = CrossDriver.getDriver(browser);

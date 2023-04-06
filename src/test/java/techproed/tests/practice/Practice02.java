@@ -26,7 +26,7 @@ public class Practice02 {
                 dragAndDrop(dhtml.Washington, dhtml.Abd).
                 dragAndDrop(dhtml.Rome, dhtml.Italy).
                 dragAndDrop(dhtml.Madrid, dhtml.Spain).
-                dragAndDrop(dhtml.Copenhagen, dhtml.Denmark).perform();
+                dragAndDrop(dhtml.Copenhagen, dhtml.Denmark).build().perform();
     }
 
 }

@@ -9,11 +9,12 @@ import techproed.utilities.Driver;
 
 public class Day21_TechproLoginPage {
 
+    TechproLoginPage techproLoginPage;
+    TechproHomePage techproHomePage;
     @Test(groups = "regression-tests")
     public void testName() throws InterruptedException {
-        TechproLoginPage techproLoginPage = new TechproLoginPage();
-        TechproHomePage techproHomePage = new TechproHomePage();
-
+        techproLoginPage = new TechproLoginPage();
+        techproHomePage = new TechproHomePage();
         //https://testcenter.techproeducation.com/index.php?page=form-authentication
         Driver.getDriver().get(ConfigReader.getProperty("test_center_url"));
 

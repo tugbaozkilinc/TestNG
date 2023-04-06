@@ -18,8 +18,8 @@ public class Day24_DataProviderTest03 {
     @DataProvider
     public Object[][] customerData(){
         String path = "./src/test/java/resources/mysmoketestdata.xlsx";
-        String sheet = "customer_info";
-        ExcelUtils excelUtils = new ExcelUtils(path, sheet);
+        String sheetName = "customer_info";
+        ExcelUtils excelUtils = new ExcelUtils(path, sheetName);
         Object[][] customerInformation = excelUtils.getDataArrayWithoutFirstRow();
         return customerInformation;
     }

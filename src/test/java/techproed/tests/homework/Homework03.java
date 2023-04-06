@@ -54,7 +54,6 @@ public class Homework03 {
         select.selectByValue("EUR");
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(select.getFirstSelectedOption().getText(), "Eurozone (euro)");
-        softAssert.assertAll();
         List<WebElement> list = zeroWebAppSecurityMakePaymentsPage.currencyDropdownBox;
         List<String> expectedList = new ArrayList<>(Arrays.asList("Select One", "Australia (dollar)", "Canada (dollar)","Switzerland (franc)", "China (yuan)", "Denmark (krone)",
                                     "Eurozone (euro)", "Great Britain (pound)", "Hong Kong (dollar)", "Japan (yen)", "Mexico (peso)", "Norway (krone)", "New Zealand (dollar)", "Sweden (krona)",
@@ -64,6 +63,7 @@ public class Homework03 {
                 softAssert.assertEquals(webElement.getText(), s);
             }
         }
+        softAssert.assertAll();
         Driver.closeDriver();
     }
 

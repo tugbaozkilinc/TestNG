@@ -5,8 +5,8 @@
         <packages>
 <!--      NOT: name gecerli bir isim olmali, klasorun path i root dosyasindan(techproed) baslamali
           NOT: Save-->
-            <package name="techproed.tests.dataprovider"></package>
-            <package name="techproed.tests.smoketests"></package>
+            <package name="techproed.tests.dataprovider"/>
+            <package name="techproed.tests.smoketests"/>
         </packages>
     </test>
 </suite>

@@ -12,7 +12,7 @@ public class Day24_DataProviderTest01 {
 
     //Data Provider Nedir?
     //Veri deposudur. Bir cok veriyi Test Case lere loop kullanmadan aktarmak icin kullanilir
-    //Data provider 2D(2 boyutlu) object return eder
+    //Data provider 2D(2 boyutlu) Object return eder
     //Data provider TestNG den gelen bir ozelliktir
     //Data Provider ne icin kullanilir?
     //Data provider DDT(Data Driven Testing) icin kullanilir. Birden fazla datayi test caselerde kullanmak icin kullanilir
