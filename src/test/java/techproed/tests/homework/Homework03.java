@@ -1,10 +1,7 @@
 package techproed.tests.homework;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import techproed.pages.ZeroWebAppSecurityHomePage;
@@ -54,13 +51,13 @@ public class Homework03 {
         select.selectByValue("EUR");
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(select.getFirstSelectedOption().getText(), "Eurozone (euro)");
-        List<WebElement> list = zeroWebAppSecurityMakePaymentsPage.currencyDropdownBox;
+        List<WebElement> actualList = zeroWebAppSecurityMakePaymentsPage.currencyDropdownBox;
         List<String> expectedList = new ArrayList<>(Arrays.asList("Select One", "Australia (dollar)", "Canada (dollar)","Switzerland (franc)", "China (yuan)", "Denmark (krone)",
                                     "Eurozone (euro)", "Great Britain (pound)", "Hong Kong (dollar)", "Japan (yen)", "Mexico (peso)", "Norway (krone)", "New Zealand (dollar)", "Sweden (krona)",
                                     "Singapore (dollar)", "Thailand (baht)"));
         for (String s : expectedList) {
-            for (WebElement webElement : list) {
-                softAssert.assertEquals(webElement.getText(), s);
+            for (WebElement w : actualList) {
+                softAssert.assertEquals(w.getText(), s);
             }
         }
         softAssert.assertAll();

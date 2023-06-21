@@ -1,5 +1,4 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-
 <suite name="Regression Suite">
     <test name="Regression1">
         <groups>
@@ -7,7 +6,7 @@
                 <include name="regression-tests" />
             </run>
         </groups>
-<!-- Tum projedeki klasorleri ara ve regression-tests isimli @Test(groups = "regression-tests") case leri calistir-->
+<!-- Tum projedeki klasorleri ara ve regression-tests parametreli @Test(groups = "regression-tests") case leri calistir(Yani techproed deki tum case leri calistirmayacak) -->
         <packages>
             <package name="techproed.*"/>
         </packages>

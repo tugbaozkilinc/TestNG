@@ -6,6 +6,7 @@ import techproed.pages.BlueRentalHomePage;
 import techproed.pages.BlueRentalLoginPage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
+import techproed.utilities.ReusableMethods;
 
 public class Day22_NegativeLoginTest {
 
@@ -22,7 +23,7 @@ public class Day22_NegativeLoginTest {
     BlueRentalLoginPage blueRentalLoginPage;
     BlueRentalHomePage blueRentalHomePage;
     @Test
-    public void US100208_Negative_Login() throws InterruptedException {
+    public void US100208_Negative_Login() {
         blueRentalLoginPage = new BlueRentalLoginPage();
         blueRentalHomePage = new BlueRentalHomePage();
         Driver.getDriver().get(ConfigReader.getProperty("blue_rental_car_url"));
@@ -30,7 +31,7 @@ public class Day22_NegativeLoginTest {
         blueRentalLoginPage.emailBox.sendKeys(ConfigReader.getProperty("blue_rental_car_fake_email"));
         blueRentalLoginPage.passwordBox.sendKeys(ConfigReader.getProperty("blue_rental_car_fake_password"));
         blueRentalLoginPage.loginButton.click();
-        Thread.sleep(2000);
+        ReusableMethods.waitFor(2);
         Assert.assertEquals(blueRentalLoginPage.errorMessageFirst.getText(), "User with email fake@bluerentalcars.com not found");
         Driver.closeDriver();
     }

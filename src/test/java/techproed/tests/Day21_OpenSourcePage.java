@@ -5,6 +5,7 @@ import techproed.pages.OpenSourceDashboardPage;
 import techproed.pages.OpenSourcePage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
+import techproed.utilities.ReusableMethods;
 
 public class Day21_OpenSourcePage {
 
@@ -15,14 +16,14 @@ public class Day21_OpenSourcePage {
     OpenSourcePage openSourcePage;
     OpenSourceDashboardPage openSourceDashboardPage;
     @Test
-    public void openSourceLogin() throws InterruptedException {
+    public void openSourceLogin() {
         openSourcePage = new OpenSourcePage();
         openSourceDashboardPage = new OpenSourceDashboardPage();
         Driver.getDriver().get(ConfigReader.getProperty("open_source_url"));
         openSourcePage.username.sendKeys(ConfigReader.getProperty("open_source_username"));
         openSourcePage.password.sendKeys(ConfigReader.getProperty("open_source_password"));
         openSourcePage.submitButton.click();
-        Thread.sleep(1000);
+        ReusableMethods.waitFor(1);
         assert openSourceDashboardPage.dashboardHeader.isDisplayed();
         Driver.closeDriver();
     }

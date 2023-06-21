@@ -28,6 +28,6 @@ public class Day20_Driver_Config_Test {
     //methodu chromu tam ekran başlatıyor .addExtension() methodu ile uzantı ekleyebiliyoruz vs. .setHeadless(true) methodu ise isminden anlaşılacağı üzere başsız, yani chrome browser
     //hiç açılmadan test yürütülüyor, test yürütülürken biz herhangi bir arayüz görmüyoruz ve neticeyi console'da görebiliyoruz. Bunun sebebi ise testler headless bir ortamda daha hızlı oluyor.
     //pageLoadTimeout(), selenium'un, bir sayfanın yüklenmesi için bekleyeceği süreyi tanımlar. Bence implicitlyWait'den farkı şu olabilir. Bazen sayfa yüklenmiş olsa dahi
-    //sitenin içindeki herhangi bir element yüklenmemiş olabiliyor. Bu durumda implictlyWait hata vermeden önce her halükalarda 15(belirtilen sure) saniye şansımızı denememize olanak sağlıyor.
+    //sitenin içindeki herhangi bir element yüklenmemiş olabiliyor. Bu durumda implictWait hata vermeden önce her halükalarda 15(belirtilen sure) saniye şansımızı denememize olanak sağlıyor.
 
 }

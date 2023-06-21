@@ -17,7 +17,7 @@ public class Practice03 {
     //5.sayfalari kapatiniz
 
     @DataProvider
-    public static Object[][] user() {
+    public Object[][] user() {
         return new Object[][]{{ConfigReader.getProperty("heroku_invalid_email1"), ConfigReader.getProperty("heroku_invalid_password1")},
                 {ConfigReader.getProperty("heroku_invalid_email2"), ConfigReader.getProperty("heroku_invalid_password2")},
                 {ConfigReader.getProperty("heroku_invalid_email3"), ConfigReader.getProperty("heroku_invalid_password3")}};

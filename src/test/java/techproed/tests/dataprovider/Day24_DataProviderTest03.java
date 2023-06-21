@@ -13,8 +13,6 @@ import java.io.IOException;
 
 public class Day24_DataProviderTest03 {
 
-    //Excel Data => Data Provider => TestMethod
-
     @DataProvider
     public Object[][] customerData(){
         String path = "./src/test/java/resources/mysmoketestdata.xlsx";

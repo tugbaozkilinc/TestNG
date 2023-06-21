@@ -2,7 +2,7 @@ package techproed.tests;
 
 public class TestNGReports {
 
-    //Rapor almak istedigin test e ya da package a sag tik- xml(Create TestNG XML plugin) dosyasi olustur(ya da kendin de olusturabilirsin.)
+    //Rapor almak istedigin test e ya da package a sag tik- xml(Create TestNG XML-bunun icin plugin ekli olmali) dosyasi olustur(ya da kendin de olusturabilirsin.)
     //xml i run et
     //Projeye tikla- run- edit configurations
     //xml dosyasini sec- listeners- + ya tikla- reports lari ekle;

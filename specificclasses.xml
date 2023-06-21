@@ -1,5 +1,4 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-
 <suite name="Suite1" verbose="1" >
     <test name="Positive Login Tests" >
         <classes>
@@ -13,4 +12,4 @@
     </test>
 </suite>
 
-<!--Bu xml dosyasini belirli class lari run etmek icin kullaniriz -->
+<!-- Bu xml dosyasini belirli class lari run etmek icin kullaniriz -->

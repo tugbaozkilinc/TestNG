@@ -34,8 +34,8 @@ public class DataProviderUtils {
     @DataProvider
     public Object[][] customerInformation(){
         String path = "./src/test/java/resources/mysmoketestdata.xlsx";
-        String sheet = "customer_info";
-        ExcelUtils excelUtils = new ExcelUtils(path, sheet);
+        String sheetName = "customer_info";
+        ExcelUtils excelUtils = new ExcelUtils(path, sheetName);
         return excelUtils.getDataArrayWithoutFirstRow();
     }
 

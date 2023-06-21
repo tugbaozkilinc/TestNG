@@ -52,8 +52,8 @@ public class Day23_ExcelLogin {
     @Test
     public void testName() throws IOException {
         String path = "./src/test/java/resources/mysmoketestdata.xlsx";
-        String sheet = "customer_info";
-        excelUtils = new ExcelUtils(path, sheet);
+        String sheetName = "customer_info";
+        excelUtils = new ExcelUtils(path, sheetName);
         excelData = excelUtils.getDataList();
         for (Map<String, String> w : excelData){
             login();
@@ -61,8 +61,8 @@ public class Day23_ExcelLogin {
             blueRentalLoginPage.passwordBox.sendKeys(w.get("password"));
             blueRentalLoginPage.loginButton.click();
             ReusableMethods.waitFor(1);
-            ReusableMethods.verifyElementDisplayed(blueRentalHomePage.userId); //Her bir giris islemi icin assertion
-            ReusableMethods.takeScreenshotOfPage("Screenshot"); //Her bir giris islemi icin ekran goruntusu
+            ReusableMethods.verifyElementDisplayed(blueRentalHomePage.userId);
+            ReusableMethods.takeScreenshotOfPage("Screenshot");
         }
     }
 
