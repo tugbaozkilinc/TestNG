@@ -8,17 +8,10 @@ import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 import techproed.utilities.ExcelUtils;
 import techproed.utilities.ReusableMethods;
-
-import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
 public class Day23_ExcelLogin {
-
-    //sam.walker@bluerentalcars.com  c!fas_art
-    //kate.brown@bluerentalcars.com  tad1$Fas
-    //raj.khan@bluerentalcars.com  v7Hg_va^
-    //pam.raymond@bluerentalcars.com  Nga^g6!
 
     //------------
     //HOME PAGE'DEYIZ
@@ -50,7 +43,7 @@ public class Day23_ExcelLogin {
     ExcelUtils excelUtils;
     List<Map<String, String>> excelData;
     @Test
-    public void testName() throws IOException {
+    public void testName() {
         String path = "./src/test/java/resources/mysmoketestdata.xlsx";
         String sheetName = "customer_info";
         excelUtils = new ExcelUtils(path, sheetName);

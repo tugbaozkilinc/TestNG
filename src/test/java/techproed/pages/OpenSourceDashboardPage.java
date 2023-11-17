@@ -11,7 +11,7 @@ public class OpenSourceDashboardPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy (xpath = "//h6[.='Dashboard']")
+    @FindBy(xpath = "//h6[.='Dashboard']")
     public WebElement dashboardHeader;
 
 }

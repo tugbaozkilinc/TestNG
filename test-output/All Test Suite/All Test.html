@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>All Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>39/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>30/9/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 21 08:09:13 EET 2023</td>
+<td>Started on:</td><td>Fri Nov 17 14:26:53 EET 2023</td>
 </tr>
-<tr><td>Total time:</td><td>101 seconds (101359 ms)</td>
+<tr><td>Total time:</td><td>288 seconds (288728 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,629 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='techproed.tests.smoketests.Day22_PositiveLoginTest.US100201_Admin_Login()'><b>US100201_Admin_Login</b><br>Test class: techproed.tests.smoketests.Day22_PositiveLoginTest<br/>
+<a href="#Output-1792826268" onClick='toggleBox("Output-1792826268", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1792826268" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1792826268">
+GO TO WEB PAGE<br/>
+CLICK ON THE LOGIN BUTTON<br/>
+ENTER YOUR ACCESS INFORMATION<br/>
+ASSERT THE ENTRY IS OK<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#dropdown\-basic\-button&quot;}
+  (Session info: chrome=119.0.6045.124)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d1f7ce4b3f7e6016000323acb6c18f1, findElement {using=id, value=dropdown-basic-button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\tugba\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59116/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d1f7ce4b3f7e6016000323acb6c18f1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
+	at techproed.tests.smoketests.Day22_PositiveLoginTest.US100201_Admin_Login(Day22_PositiveLoginTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1792826268", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1792826268'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#dropdown\-basic\-button&quot;}
+  (Session info: chrome=119.0.6045.124)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d1f7ce4b3f7e6016000323acb6c18f1, findElement {using=id, value=dropdown-basic-button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\tugba\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59116/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d1f7ce4b3f7e6016000323acb6c18f1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
+	at techproed.tests.smoketests.Day22_PositiveLoginTest.US100201_Admin_Login(Day22_PositiveLoginTest.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>16</td>
+<td>techproed.tests.smoketests.Day22_PositiveLoginTest@61386958</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest03.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest03<br>Parameters: raj.khan@bluerentalcars.com, v7Hg_va^</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d1f7ce4b3f7e6016000323acb6c18f1, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\tugba\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59116/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d1f7ce4b3f7e6016000323acb6c18f1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:978)
+	at techproed.utilities.Driver.getDriver(Driver.java:32)
+	at techproed.pages.BlueRentalHomePage.&lt;init&gt;(BlueRentalHomePage.java:11)
+	at techproed.tests.dataprovider.Day24_DataProviderTest03.testName(Day24_DataProviderTest03.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1109306750", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1109306750'><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d1f7ce4b3f7e6016000323acb6c18f1, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\tugba\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59116/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d1f7ce4b3f7e6016000323acb6c18f1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:978)
+	at techproed.utilities.Driver.getDriver(Driver.java:32)
+	at techproed.pages.BlueRentalHomePage.&lt;init&gt;(BlueRentalHomePage.java:11)
+	at techproed.tests.dataprovider.Day24_DataProviderTest03.testName(Day24_DataProviderTest03.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest03@77eca502</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: raj.khan@bluerentalcars.com, v7Hg_va^</td>
+<td><div><pre>java.lang.AssertionError: Element not found: Proxy element for: DefaultElementLocator &apos;By.id: dropdown-basic-button&apos;
+	at techproed.utilities.ReusableMethods.verifyElementDisplayed(ReusableMethods.java:205)
+	at techproed.tests.dataprovider.Day24_DataProviderTest02.testName(Day24_DataProviderTest02.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1174694918", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1174694918'><pre>java.lang.AssertionError: Element not found: Proxy element for: DefaultElementLocator &apos;By.id: dropdown-basic-button&apos;
+	at org.testng.Assert.fail(Assert.java:110)
+	at techproed.utilities.ReusableMethods.verifyElementDisplayed(ReusableMethods.java:205)
+	at techproed.tests.dataprovider.Day24_DataProviderTest02.testName(Day24_DataProviderTest02.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>46</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest02@7690781</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest03.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest03<br>Parameters: sam.walker@bluerentalcars.com, c!fas_art</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d1f7ce4b3f7e6016000323acb6c18f1, findElement {using=id, value=dropdown-basic-button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\tugba\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59116/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d1f7ce4b3f7e6016000323acb6c18f1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at techproed.utilities.ReusableMethods.verifyElementDisplayed(ReusableMethods.java:205)
+	at techproed.tests.dataprovider.Day24_DataProviderTest03.testName(Day24_DataProviderTest03.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace667237426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace667237426'><pre>org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d1f7ce4b3f7e6016000323acb6c18f1, findElement {using=id, value=dropdown-basic-button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\tugba\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59116/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d1f7ce4b3f7e6016000323acb6c18f1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at techproed.utilities.ReusableMethods.verifyElementDisplayed(ReusableMethods.java:205)
+	at techproed.tests.dataprovider.Day24_DataProviderTest03.testName(Day24_DataProviderTest03.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>33</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest03@77eca502</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest03.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest03<br>Parameters: pam.raymond@bluerentalcars.com, Nga^g6!</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d1f7ce4b3f7e6016000323acb6c18f1, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\tugba\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59116/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d1f7ce4b3f7e6016000323acb6c18f1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:978)
+	at techproed.utilities.Driver.getDriver(Driver.java:32)
+	at techproed.pages.BlueRentalHomePage.&lt;init&gt;(BlueRentalHomePage.java:11)
+	at techproed.tests.dataprovider.Day24_DataProviderTest03.testName(Day24_DataProviderTest03.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1719854757", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1719854757'><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d1f7ce4b3f7e6016000323acb6c18f1, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\tugba\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59116/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d1f7ce4b3f7e6016000323acb6c18f1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:978)
+	at techproed.utilities.Driver.getDriver(Driver.java:32)
+	at techproed.pages.BlueRentalHomePage.&lt;init&gt;(BlueRentalHomePage.java:11)
+	at techproed.tests.dataprovider.Day24_DataProviderTest03.testName(Day24_DataProviderTest03.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest03@77eca502</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: sam.walker@bluerentalcars.com, c!fas_art</td>
+<td><div><pre>java.lang.AssertionError: Element not found: Proxy element for: DefaultElementLocator &apos;By.id: dropdown-basic-button&apos;
+	at techproed.utilities.ReusableMethods.verifyElementDisplayed(ReusableMethods.java:205)
+	at techproed.tests.dataprovider.Day24_DataProviderTest02.testName(Day24_DataProviderTest02.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1870234754", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1870234754'><pre>java.lang.AssertionError: Element not found: Proxy element for: DefaultElementLocator &apos;By.id: dropdown-basic-button&apos;
+	at org.testng.Assert.fail(Assert.java:110)
+	at techproed.utilities.ReusableMethods.verifyElementDisplayed(ReusableMethods.java:205)
+	at techproed.tests.dataprovider.Day24_DataProviderTest02.testName(Day24_DataProviderTest02.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>48</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest02@7690781</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest03.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest03<br>Parameters: raj.khan@bluerentalcars.com, v7Hg_va^</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d1f7ce4b3f7e6016000323acb6c18f1, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\tugba\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59116/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d1f7ce4b3f7e6016000323acb6c18f1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:978)
+	at techproed.utilities.Driver.getDriver(Driver.java:32)
+	at techproed.pages.BlueRentalHomePage.&lt;init&gt;(BlueRentalHomePage.java:11)
+	at techproed.tests.dataprovider.Day24_DataProviderTest03.testName(Day24_DataProviderTest03.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1571205437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1571205437'><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=119.0.6045.124)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d1f7ce4b3f7e6016000323acb6c18f1, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\tugba\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59116/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d1f7ce4b3f7e6016000323acb6c18f1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:978)
+	at techproed.utilities.Driver.getDriver(Driver.java:32)
+	at techproed.pages.BlueRentalHomePage.&lt;init&gt;(BlueRentalHomePage.java:11)
+	at techproed.tests.dataprovider.Day24_DataProviderTest03.testName(Day24_DataProviderTest03.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest03@77eca502</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: pam.raymond@bluerentalcars.com, Nga^g6!</td>
+<td><div><pre>java.lang.AssertionError: Element not found: Proxy element for: DefaultElementLocator &apos;By.id: dropdown-basic-button&apos;
+	at techproed.utilities.ReusableMethods.verifyElementDisplayed(ReusableMethods.java:205)
+	at techproed.tests.dataprovider.Day24_DataProviderTest02.testName(Day24_DataProviderTest02.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1688151539", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1688151539'><pre>java.lang.AssertionError: Element not found: Proxy element for: DefaultElementLocator &apos;By.id: dropdown-basic-button&apos;
+	at org.testng.Assert.fail(Assert.java:110)
+	at techproed.utilities.ReusableMethods.verifyElementDisplayed(ReusableMethods.java:205)
+	at techproed.tests.dataprovider.Day24_DataProviderTest02.testName(Day24_DataProviderTest02.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>46</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest02@7690781</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: kate.brown@bluerentalcars.com, tad1$Fas</td>
+<td><div><pre>java.lang.AssertionError: Element not found: Proxy element for: DefaultElementLocator &apos;By.id: dropdown-basic-button&apos;
+	at techproed.utilities.ReusableMethods.verifyElementDisplayed(ReusableMethods.java:205)
+	at techproed.tests.dataprovider.Day24_DataProviderTest02.testName(Day24_DataProviderTest02.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1857852787", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1857852787'><pre>java.lang.AssertionError: Element not found: Proxy element for: DefaultElementLocator &apos;By.id: dropdown-basic-button&apos;
+	at org.testng.Assert.fail(Assert.java:110)
+	at techproed.utilities.ReusableMethods.verifyElementDisplayed(ReusableMethods.java:205)
+	at techproed.tests.dataprovider.Day24_DataProviderTest02.testName(Day24_DataProviderTest02.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>46</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest02@7690781</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,211 +699,155 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: honda</td>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: volvo</td>
 <td></td>
-<td>0</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest01@a3d8174</td></tr>
+<td>6</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@29647f75</td></tr>
 <tr>
 <td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeDataTest()'><b>employeeDataTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: Bob, 93837</td>
 <td></td>
 <td>0</td>
-<td>techproed.tests.dataprovider.Day25_DataProviderTest04@306f16f3</td></tr>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@3246fb96</td></tr>
 <tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: honda</td>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: bmw</td>
 <td></td>
-<td>11</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest01@a3d8174</td></tr>
+<td>6</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@29647f75</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: toyota</td>
+<td></td>
+<td>7</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@29647f75</td></tr>
 <tr>
 <td title='techproed.tests.dataprovider.Day25_DataProviderTest04.customerServiceTest()'><b>customerServiceTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: Adam, 12345</td>
 <td></td>
 <td>0</td>
-<td>techproed.tests.dataprovider.Day25_DataProviderTest04@306f16f3</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeInformationTest()'><b>employeeInformationTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: pam.raymond@bluerentalcars.com, Nga^g6!</td>
-<td></td>
-<td>0</td>
-<td>techproed.tests.dataprovider.Day25_DataProviderTest04@306f16f3</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: tesla</td>
-<td></td>
-<td>7</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest01@a3d8174</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: bmw</td>
-<td></td>
-<td>0</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest01@a3d8174</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: toyota</td>
-<td></td>
-<td>0</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest01@a3d8174</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeDataTest()'><b>employeeDataTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: Daisy, 02837</td>
-<td></td>
-<td>0</td>
-<td>techproed.tests.dataprovider.Day25_DataProviderTest04@306f16f3</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: sam.walker@bluerentalcars.com, c!fas_art</td>
-<td></td>
-<td>5</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest02@1a4013</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.dataProviderTest()'><b>dataProviderTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: kate.brown@bluerentalcars.com, tad1$Fas</td>
-<td></td>
-<td>0</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest02@1a4013</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: mercedes</td>
-<td></td>
-<td>5</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest01@a3d8174</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest03.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest03<br>Parameters: raj.khan@bluerentalcars.com, v7Hg_va^</td>
-<td></td>
-<td>5</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest03@1b6e1eff</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: tesla</td>
-<td></td>
-<td>0</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest01@a3d8174</td></tr>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@3246fb96</td></tr>
 <tr>
 <td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeInformationTest()'><b>employeeInformationTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: raj.khan@bluerentalcars.com, v7Hg_va^</td>
 <td></td>
 <td>0</td>
-<td>techproed.tests.dataprovider.Day25_DataProviderTest04@306f16f3</td></tr>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@3246fb96</td></tr>
 <tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: toyota</td>
-<td></td>
-<td>6</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest01@a3d8174</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: bmw</td>
-<td></td>
-<td>7</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest01@a3d8174</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest03.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest03<br>Parameters: sam.walker@bluerentalcars.com, c!fas_art</td>
-<td></td>
-<td>6</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest03@1b6e1eff</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeInformationTest()'><b>employeeInformationTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: kate.brown@bluerentalcars.com, tad1$Fas</td>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: honda</td>
 <td></td>
 <td>0</td>
-<td>techproed.tests.dataprovider.Day25_DataProviderTest04@306f16f3</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.dataProviderTest()'><b>dataProviderTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: raj.khan@bluerentalcars.com, v7Hg_va^</td>
-<td></td>
-<td>0</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest02@1a4013</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.customerDataTest()'><b>customerDataTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: manager3, 56790, Oslo</td>
-<td></td>
-<td>0</td>
-<td>techproed.tests.dataprovider.Day25_DataProviderTest04@306f16f3</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: mercedes</td>
-<td></td>
-<td>0</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest01@a3d8174</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.customerDataTest()'><b>customerDataTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: manager2, 98712, Tokyo</td>
-<td></td>
-<td>0</td>
-<td>techproed.tests.dataprovider.Day25_DataProviderTest04@306f16f3</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: volvo</td>
-<td></td>
-<td>0</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest01@a3d8174</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: raj.khan@bluerentalcars.com, v7Hg_va^</td>
-<td></td>
-<td>5</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest02@1a4013</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: kate.brown@bluerentalcars.com, tad1$Fas</td>
-<td></td>
-<td>5</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest02@1a4013</td></tr>
-<tr>
-<td title='techproed.tests.smoketests.Day22_NegativeLoginTest.US100208_Negative_Login()'><b>US100208_Negative_Login</b><br>Test class: techproed.tests.smoketests.Day22_NegativeLoginTest</td>
-<td></td>
-<td>5</td>
-<td>techproed.tests.smoketests.Day22_NegativeLoginTest@702b8b12</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.customerServiceTest()'><b>customerServiceTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: John, 56789</td>
-<td></td>
-<td>0</td>
-<td>techproed.tests.dataprovider.Day25_DataProviderTest04@306f16f3</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.dataProviderTest()'><b>dataProviderTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: pam.raymond@bluerentalcars.com, Nga^g6!</td>
-<td></td>
-<td>0</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest02@1a4013</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeInformationTest()'><b>employeeInformationTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: sam.walker@bluerentalcars.com, c!fas_art</td>
-<td></td>
-<td>0</td>
-<td>techproed.tests.dataprovider.Day25_DataProviderTest04@306f16f3</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.customerDataTest()'><b>customerDataTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: manager1, 12378, NewYork</td>
-<td></td>
-<td>0</td>
-<td>techproed.tests.dataprovider.Day25_DataProviderTest04@306f16f3</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: pam.raymond@bluerentalcars.com, Nga^g6!</td>
-<td></td>
-<td>5</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest02@1a4013</td></tr>
-<tr>
-<td title='techproed.tests.smoketests.Day22_PositiveLoginTest.US100201_Admin_Login()'><b>US100201_Admin_Login</b><br>Test class: techproed.tests.smoketests.Day22_PositiveLoginTest<br/>
-<a href="#Output-622938007" onClick='toggleBox("Output-622938007", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-622938007" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-622938007">
-GO TO WEB PAGE<br/>
-CLICK ON THE LOGIN BUTTON<br/>
-ENTER YOUR ACCESS INFORMATION<br/>
-ASSERT THE ENTRY IS OK<br/>
-CLOSE THE DRIVER<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>techproed.tests.smoketests.Day22_PositiveLoginTest@22e357dc</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.dataProviderTest()'><b>dataProviderTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: sam.walker@bluerentalcars.com, c!fas_art</td>
-<td></td>
-<td>0</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest02@1a4013</td></tr>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@29647f75</td></tr>
 <tr>
 <td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeDataTest()'><b>employeeDataTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: Jake, 65746</td>
 <td></td>
 <td>0</td>
-<td>techproed.tests.dataprovider.Day25_DataProviderTest04@306f16f3</td></tr>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@3246fb96</td></tr>
 <tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest03.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest03<br>Parameters: pam.raymond@bluerentalcars.com, Nga^g6!</td>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.dataProviderTest()'><b>dataProviderTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: pam.raymond@bluerentalcars.com, Nga^g6!</td>
 <td></td>
-<td>4</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest03@1b6e1eff</td></tr>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest02@7690781</td></tr>
 <tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest03.testName()'><b>testName</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest03<br>Parameters: kate.brown@bluerentalcars.com, tad1$Fas</td>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: volvo</td>
 <td></td>
-<td>10</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest03@1b6e1eff</td></tr>
-<tr>
-<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: volvo</td>
-<td></td>
-<td>4</td>
-<td>techproed.tests.dataprovider.Day24_DataProviderTest01@a3d8174</td></tr>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@29647f75</td></tr>
 <tr>
 <td title='techproed.tests.dataprovider.Day25_DataProviderTest04.customerServiceTest()'><b>customerServiceTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: Nancy, 98765</td>
 <td></td>
 <td>0</td>
-<td>techproed.tests.dataprovider.Day25_DataProviderTest04@306f16f3</td></tr>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@3246fb96</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeInformationTest()'><b>employeeInformationTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: sam.walker@bluerentalcars.com, c!fas_art</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@3246fb96</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.customerDataTest()'><b>customerDataTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: manager1, 12378, NewYork</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@3246fb96</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeDataTest()'><b>employeeDataTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: Daisy, 02837</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@3246fb96</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: tesla</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@29647f75</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: bmw</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@29647f75</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: mercedes</td>
+<td></td>
+<td>6</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@29647f75</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.dataProviderTest()'><b>dataProviderTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: sam.walker@bluerentalcars.com, c!fas_art</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest02@7690781</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeInformationTest()'><b>employeeInformationTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: pam.raymond@bluerentalcars.com, Nga^g6!</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@3246fb96</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: mercedes</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@29647f75</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.searchTest()'><b>searchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: toyota</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@29647f75</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: honda</td>
+<td></td>
+<td>6</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@29647f75</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.dataProviderTest()'><b>dataProviderTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: kate.brown@bluerentalcars.com, tad1$Fas</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest02@7690781</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.employeeInformationTest()'><b>employeeInformationTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: raj.khan@bluerentalcars.com, v7Hg_va^</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@3246fb96</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.customerServiceTest()'><b>customerServiceTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: John, 56789</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@3246fb96</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.customerDataTest()'><b>customerDataTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: manager3, 56790, Oslo</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@3246fb96</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest02.dataProviderTest()'><b>dataProviderTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest02<br>Parameters: raj.khan@bluerentalcars.com, v7Hg_va^</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest02@7690781</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day24_DataProviderTest01.googleSearchTest()'><b>googleSearchTest</b><br>Test class: techproed.tests.dataprovider.Day24_DataProviderTest01<br>Parameters: tesla</td>
+<td></td>
+<td>9</td>
+<td>techproed.tests.dataprovider.Day24_DataProviderTest01@29647f75</td></tr>
+<tr>
+<td title='techproed.tests.dataprovider.Day25_DataProviderTest04.customerDataTest()'><b>customerDataTest</b><br>Test class: techproed.tests.dataprovider.Day25_DataProviderTest04<br>Parameters: manager2, 98712, Tokyo</td>
+<td></td>
+<td>0</td>
+<td>techproed.tests.dataprovider.Day25_DataProviderTest04@3246fb96</td></tr>
+<tr>
+<td title='techproed.tests.smoketests.Day22_NegativeLoginTest.US100208_Negative_Login()'><b>US100208_Negative_Login</b><br>Test class: techproed.tests.smoketests.Day22_NegativeLoginTest</td>
+<td></td>
+<td>5</td>
+<td>techproed.tests.smoketests.Day22_NegativeLoginTest@2e222612</td></tr>
 </table><p>
 </body>
 </html>

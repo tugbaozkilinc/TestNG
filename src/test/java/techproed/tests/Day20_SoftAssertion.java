@@ -12,13 +12,13 @@ public class Day20_SoftAssertion {
     @Test
     public void testName() {
         SoftAssert softAssert = new SoftAssert();
-        System.out.println("Satir 16");
+        System.out.println("Satir 15");
         softAssert.assertEquals(2, 5); //fail
-        System.out.println("Satir 18");
+        System.out.println("Satir 17");
         softAssert.assertTrue("JAVA".contains("U")); //fail
-        System.out.println("Satir 20");
+        System.out.println("Satir 19");
         softAssert.assertTrue(true); //pass
-        System.out.println("Satir 22");
+        System.out.println("Satir 21");
         softAssert.assertAll(); //Pass ya da Fail olarak assertion in durumunu raporlar. Bunu kullanmazsan sadece pass olanlari gorursun, fail olanlari goremezsin.
     }
 

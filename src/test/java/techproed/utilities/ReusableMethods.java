@@ -5,7 +5,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -15,13 +14,12 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 import java.util.function.Function;
-
 import static org.testng.AssertJUnit.assertFalse;
 import static org.testng.AssertJUnit.assertTrue;
 
 public class ReusableMethods {
 
-    public static void takeScreenshotOfPage(String name) throws IOException {
+    public static void takeScreenshotOfPage(String name) {
         //naming the screenshot with the current date to avoid duplication
         String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         //TakesScreenshot is an interface of selenium that takes the screenshot
@@ -31,7 +29,11 @@ public class ReusableMethods {
         String target = System.getProperty("user.dir") + "/test-output/Screenshots/" + date + name + ".png";
         File finalDestination = new File(target);
         //save the screenshot to the path given
-        FileUtils.copyFile(source, finalDestination);
+        try {
+            FileUtils.copyFile(source, finalDestination);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public void takeScreenshotOfElement(WebElement element) throws IOException {

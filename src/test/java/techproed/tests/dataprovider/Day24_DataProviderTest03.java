@@ -9,8 +9,6 @@ import techproed.utilities.Driver;
 import techproed.utilities.ExcelUtils;
 import techproed.utilities.ReusableMethods;
 
-import java.io.IOException;
-
 public class Day24_DataProviderTest03 {
 
     @DataProvider
@@ -27,7 +25,7 @@ public class Day24_DataProviderTest03 {
     BlueRentalHomePage blueRentalHomePage;
     BlueRentalLoginPage blueRentalLoginPage;
     @Test(dataProvider = "customerData")
-    public void testName(String email, String password) throws IOException {
+    public void testName(String email, String password) {
         blueRentalHomePage = new BlueRentalHomePage();
         blueRentalLoginPage = new BlueRentalLoginPage();
         Driver.getDriver().get(ConfigReader.getProperty("blue_rental_car_url"));

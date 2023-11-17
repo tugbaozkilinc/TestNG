@@ -4,8 +4,6 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import java.io.IOException;
-
 public class Listeners implements ITestListener {
 
     @Override
@@ -31,11 +29,7 @@ public class Listeners implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result){
         System.out.println("onTestFailure/It runs after only tests which failed just once: " + result.getName());
-        try {
-            ReusableMethods.takeScreenshotOfPage("Test-Case-Fail-" + result.getName());
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        ReusableMethods.takeScreenshotOfPage("Test-Case-Fail-" + result.getName());
     }
 
     @Override

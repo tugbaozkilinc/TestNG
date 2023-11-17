@@ -1,21 +1,17 @@
 package techproed.tests.paralleltesting;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Reporter;
 import org.testng.annotations.Test;
 import techproed.utilities.ReusableMethods;
-
 import java.time.Duration;
 
 public class Day26_SearchItems {
 
     @Test
     public void googleSearch(){
-        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
@@ -28,7 +24,6 @@ public class Day26_SearchItems {
 
     @Test
     public void ebaySearch(){
-        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
@@ -41,7 +36,6 @@ public class Day26_SearchItems {
 
     @Test
     public void amazonSearch(){
-        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
