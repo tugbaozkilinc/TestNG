@@ -10,7 +10,7 @@ public class Day19_TestNGAnnotations {
 
     //@Test : test case olusturmak icin kullanilir.
     //@Before ve @After: 5 Before 5 After annotations var;
-    //suite > tests > group > class > method
+    //suite > test > groups > class > method
     //@BeforeSuite : her bir test suite ten once 1 sefer calisir
     //@AfterSuite : Her bir test suite'den sonra 1 sefer calisir
     //@BeforeTest : Her bir Test'den once(TEST CASE ILE KARISTIRILMAMALI) 1 sefer calisir
