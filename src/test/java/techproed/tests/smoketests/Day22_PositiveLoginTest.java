@@ -25,7 +25,7 @@ public class Day22_PositiveLoginTest {
     public void US100201_Admin_Login() {
         blueRentalHomePage = new BlueRentalHomePage();
         blueRentalLoginPage = new BlueRentalLoginPage();
-        Reporter.log("GO TO WEB PAGE"); //Log4J2 daki islemleri bu sekilde TestNG report ile de yapabiliriz. Log4J2 TestNG de kullanilabilir, fakat bu islem sadece TestNG report a aittir.
+        Reporter.log("GO TO WEB PAGE"); //Log4J2 daki islemleri bu sekilde TestNG report ile de yapabiliriz. Log4J2 TestNG de kullanilabilir, fakat bu islem sadece TestNG report'a aittir.
                                            //Fakat bu mesajlari Log4J2 daki gibi consolda degil raporda gorursun.
         Driver.getDriver().get(ConfigReader.getProperty("blue_rental_car_url"));
         Reporter.log("CLICK ON THE LOGIN BUTTON");

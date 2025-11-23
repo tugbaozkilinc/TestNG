@@ -17,10 +17,4 @@ public class Day20_Driver_Config_Test {
         Driver.closeDriver();
     }
 
-    //Bir sirkette test framework’u olusturdugumuzda kullanici adi, sifresi, gidilecek web adresi gibi test datalari tum testler icin gecerlidir.
-    //Daha kullanisli bir Framework olusturmak icin temel hedefimiz, tekrar tekrar yaptigimiz islemleri ve testlerimizde kullandigimiz Test Data’larini onceden
-    //hazirladigimiz dosyalarda tutmaktir.
-    //POM çok popüler bir Framework Design Pattern‘dir. Test suitlerimizde çok fazla testimiz olduğunda, test caseleri ve kodları korumak daha karmaşık hale gelir.
-    //Bu nedenle, sürdürülebilir(maintainable), yeniden kullanılabilir(reusable), daha hızlı(faster), anlaşılabilir(understandable) daha iyi bir framework dizaynina ihtiyacımız vardir.
-
 }

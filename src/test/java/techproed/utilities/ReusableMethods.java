@@ -198,7 +198,7 @@ public class ReusableMethods {
 
     public static void verifyElementDisplayed(WebElement element) {
         try {
-            assertTrue("Element not visible: " + element, element.isDisplayed());
+            assertTrue("Element is visible: " + element, element.isDisplayed());
         } catch (NoSuchElementException e) {
             Assert.fail("Element not found: " + element);
         }

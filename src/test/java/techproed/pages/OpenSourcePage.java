@@ -8,8 +8,6 @@ import techproed.utilities.Driver;
 public class OpenSourcePage {
 
     public OpenSourcePage() {
-        //PageFactory Selenium dan gelir ve bu sayfa elementlerini instantiate etmek icin kullanilir.
-        //Sayfa objeleri cagirildiginda NullPointerException alinmaz.
         PageFactory.initElements(Driver.getDriver(), this);
     }
 

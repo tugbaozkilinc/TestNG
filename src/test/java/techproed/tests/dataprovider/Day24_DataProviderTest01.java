@@ -10,12 +10,9 @@ import techproed.utilities.Driver;
 
 public class Day24_DataProviderTest01 {
 
-    //Data Provider Nedir?
-    //Veri deposudur. Bir cok veriyi Test Case lere loop kullanmadan aktarmak icin kullanilir
-    //Data provider 2D(2 boyutlu) Object return eder
-    //Data provider TestNG den gelen bir ozelliktir
-    //Data Provider ne icin kullanilir?
-    //Data provider DDT(Data Driven Testing) icin kullanilir. Birden fazla datayi test caselerde kullanmak icin kullanilir
+    //Data Provider veri deposudur. Bir cok veriyi Test Case lere loop kullanmadan aktarmak icin kullanilir
+    //2D(2 boyutlu) Object return eder. TestNG den gelen bir ozelliktir
+    //Data provider DDT(Data Driven Testing) icin yani birden fazla datayi test caselerde kullanmak icin kullanilir
     //Data Provider i nasil kullanirsin?
     //@DataProvider annotation ile veri havuzu olusturulur.
     //@Test method larina bu data havuzu dataProvider parametresi ile baglanir, data parametresi ile de veri akisi saglanir.

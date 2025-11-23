@@ -9,7 +9,8 @@ public class AmazonHomePage {
 
     public AmazonHomePage() { PageFactory.initElements(Driver.getDriver(), this); }
 
-    //PageFactory.initElements() metodu, AmazonHomePage sınıfı içinde tanımlanan WebElement'lerin başlatılmasını sağlar. Bu metod, belirtilen sürücüyü kullanarak, sayfa öğelerini bulmak ve başlatmak için gerekli olan sorguları(queries) çalıştırır.
+    //PageFactory.initElements() metodu, AmazonHomePage sınıfı içinde tanımlanan WebElement'lerin başlatılmasını sağlar.
+    //Bu metod, belirtilen sürücüyü kullanarak, sayfa öğelerini bulmak ve başlatmak için gerekli olan sorguları(queries) çalıştırır.
 
     @FindBy(id = "twotabsearchtextbox")
     public WebElement searchBox;

@@ -4,10 +4,6 @@ import org.testng.annotations.*;
 
 public class Day19_TestNGAnnotations {
 
-    //TestNG Junit’in gelismis versiyonudur. Açık Kaynak kodludur. TestNG bir test kütüphanesidir. TestNG sadece JAVA ile calisir
-    //Tester’lar TestNG’yi etkili bir framework tasarlamak ve test case’leri TestNG annotation’ları ile organize etmek için kullanırlar.
-    //Yazılan test case’lerin paralel olarak çalıştırılmasına, birden fazla browser kullanilmasina imkan tanir. Paralel ve Cross-Browser Test yapmamiza imkan tanir
-
     //@Test : test case olusturmak icin kullanilir.
     //@Before ve @After: 5 Before 5 After annotations var;
     //suite > test > groups > class > method

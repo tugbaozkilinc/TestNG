@@ -23,21 +23,4 @@ public class Day20_DependsOnMethods {
         System.out.println("Payment Test");
     }
 
-    //Test datalari nerden gelir?
-    //BA
-    //Test Lead
-    //Tech Lead/Team Lead/Dev Lead
-    //Manual Tester
-    //Developer
-    //Test datalarini test caselerde nasıl kullanırsın?
-    //Dynamic olarak alirim. Datalar dışardaki bazı dosyalardan gelir :
-    //External Files
-    //Config.properties
-    //Excel
-    //Json
-    //Xml
-    //Database
-    //API
-    //Faker
-
 }
